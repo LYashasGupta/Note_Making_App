@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <center> <h1> Note Making App:</h1> </center>
+</head>
+<body bgcolor = "PaleTurquoise">
+    <center> <form action="/" method = "POST"> </center>
+    <center><input type="text" name="note" placeholder="Enter a note"></center> <br>
+        <center><button>Add Note</button></center>
+    </form>
+
+    <ul>
+        {% for note in notes %}
+            <li>{{ note }}</li>
+        {% endfor %}
+        </ul>
+     
+</body>
+</html>
